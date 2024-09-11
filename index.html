@@ -1,0 +1,116 @@
+
+<style>
+.pikachu-section {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 111px 70px;
+  overflow: hidden;
+}
+
+.pikachu-container {
+  width: 100%;
+  max-width: 1089px;
+  margin-left: 32px;
+}
+
+.pikachu-content {
+  display: flex;
+  gap: 20px;
+}
+
+.pikachu-info {
+  width: 50%;
+}
+
+.pikachu-description {
+  color: #000;
+  margin-top: 99px;
+  font: 400 48px Inter, sans-serif;
+}
+
+.pikachu-images {
+  width: 50%;
+  margin-left: 20px;
+}
+
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.pikachu-image {
+  aspect-ratio: 1.05;
+  object-fit: contain;
+  width: 458px;
+  max-width: 100%;
+}
+
+.pikachu-secondary-image {
+  aspect-ratio: 1.5;
+  object-fit: contain;
+  width: 100%;
+  margin-top: 30px;
+}
+
+@media (max-width: 991px) {
+  .pikachu-section {
+    padding: 100px 20px;
+  }
+
+  .pikachu-container {
+    max-width: 100%;
+  }
+
+  .pikachu-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .pikachu-info,
+  .pikachu-images {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .pikachu-description {
+    max-width: 100%;
+    margin-top: 40px;
+    font-size: 40px;
+  }
+
+  .image-wrapper {
+    margin-top: 11px;
+  }
+
+  .pikachu-secondary-image {
+    max-width: 100%;
+  }
+}
+</style>
+
+<section class="pikachu-section">
+  <div class="pikachu-container">
+    <div class="pikachu-content">
+      <div class="pikachu-info">
+        <p class="pikachu-description">
+          名前　ピカチュウ <br>
+          種類：電気ねずみポケモン <br>
+          タイプ：でんき <br>
+          技：アイアンテール <br>
+          エレキボール <br>
+          電光石火 <br>
+          10万ボルト　など <br>
+          帽子を被ることもある
+        </p>
+      </div>
+      <div class="pikachu-images">
+        <div class="image-wrapper">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/82980539ed724e503a79d6cb623a30b042b99e59ac5cd64858528306a08f51ba?placeholderIfAbsent=true&apiKey=b568a0e99349452da830479098fc6ba4" class="pikachu-image" alt="Pikachu main image">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f0ed491869819f7d2903b0b05deb9d2eda80aba59b55040f1683fb283a07ed34?placeholderIfAbsent=true&apiKey=b568a0e99349452da830479098fc6ba4" class="pikachu-secondary-image" alt="Pikachu secondary image">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
